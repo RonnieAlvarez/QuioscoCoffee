@@ -1,7 +1,7 @@
 import useSWR from 'swr';
 import axios from 'axios';
 import AdminLayout from '../layout/AdminLayout';
-import Orden from '../components/orden';
+import Orden from '../components/Orden.js';
 
 export default function Admin() {
 	const fetcher = () => axios('/api/ordenes').then(datos=>datos.data)
@@ -17,9 +17,6 @@ export default function Admin() {
 					orden={orden}
 			/>
 			 ) : <p>No Hay Ordenes Pendientes</p>}
-
-
-
 		</AdminLayout>
 	);
 }

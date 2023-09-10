@@ -45,9 +45,7 @@ export default function Orden({ orden }) {
 				<button type="button"
 					className='bg-indigo-600 hover:bg-indigo-800 text-white mt-5 md:mt-0 
 				py-3 px-10 uppercase font-bold rounded-lg'
-				onClick={completarOrden}>
-					Completar Orden
-				</button>
+				onClick={completarOrden}>Completar Orden</button>
       </div>
 		</div>
 	);
