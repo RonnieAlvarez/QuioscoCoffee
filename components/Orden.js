@@ -3,7 +3,7 @@ import { formatearDinero } from './../helpers/index';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-export default function Orden({ orden }) {
+const Orden = ({ orden }) => {
 	const { id, nombre, total, pedido } = orden;
 	const completarOrden = async () => {
 		try {
@@ -50,3 +50,4 @@ export default function Orden({ orden }) {
 		</div>
 	);
 }
+export default Orden
