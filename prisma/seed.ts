@@ -6,10 +6,10 @@ const prisma = new PrismaClient();
 
 const main = async (): Promise<void> => {
 	try {
-		await prisma.categoria.createMany({
+		await prisma.Categoria.createMany({
 			data: categorias,
 		});
-		await prisma.producto.createMany({
+		await prisma.Producto.createMany({
 			data: productos,
 		});
 	} catch (error) {
